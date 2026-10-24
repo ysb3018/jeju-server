@@ -58,7 +58,7 @@ def check(payload, label):
         raise RuntimeError(f"{label}: {code} {header.get('resultMsg')}")
 
 
-def fetch_tide(start):
+def fetch_tide(start, raw_sample):
     result = {}
     for code in OBS_CODES:
         events = []
@@ -66,7 +66,10 @@ def fetch_tide(start):
             day = (start + timedelta(days=offset)).strftime("%Y%m%d")
             payload = retry(f"tide {code} {day}", lambda: get_json(
                 TIDE_URL, {"obsCode": code, "reqDate": day, "type": "json", "numOfRows": "10"}))
+            if not raw_sample:
+                raw_sample.append({"obsCode": code, "reqDate": day, "response": payload})
             check(payload, f"tide {code} {day}")
+            print(f"tide {code} {day}: {len(items_of(payload))} items")
             for item in items_of(payload):
                 stamp = str(item.get("predcDt", ""))
                 events.append({
@@ -118,8 +121,10 @@ def main():
     # 2) 조석: 6시간마다 갱신
     if now.hour % 6 == 0 or not (OUT / "tide.json").exists():
         try:
+            raw_sample = []
+            tide_data = fetch_tide(now.date(), raw_sample)
             save("tide.json", {"updatedAt": now.isoformat(timespec="seconds"),
-                               "obsCodes": fetch_tide(now.date())})
+                               "obsCodes": tide_data, "rawSample": raw_sample})
         except Exception:
             failed.append("tide")
             traceback.print_exc()
