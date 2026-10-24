@@ -113,6 +113,34 @@ def reachable(host="apis.data.go.kr", port=443, timeout=15):
         return False
 
 
+def tide_has_events():
+    path = OUT / "tide.json"
+    if not path.exists():
+        return False
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return any(data.get("obsCodes", {}).values())
+    except ValueError:
+        return False
+
+
+def fetch_water(today):
+    """오늘부터 3일 전까지 거슬러 올라가며 첫 번째로 자료가 있는 날을 쓴다."""
+    last = None
+    for back in range(3):
+        day = (today - timedelta(days=back)).strftime("%Y%m%d")
+        text = retry(f"water {day}", lambda: fetch_text(
+            WATER_URL, {"analsYmd": day, "numOfRows": "100", "pageNo": "1"}))
+        parsed = xml_to_dict(text)
+        check(parsed, f"water {day}")
+        total = parsed["response"]["body"]["items"]["item"]
+        print(f"water {day}: {len(total)} items")
+        last = (day, parsed, text)
+        if total:
+            return last
+    return last
+
+
 def save(name, data):
     (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{name} saved")
@@ -140,7 +168,7 @@ def main():
         traceback.print_exc()
 
     # 2) 조석: 6시간마다 갱신
-    if now.hour % 6 == 0 or not (OUT / "tide.json").exists():
+    if now.hour % 6 == 0 or not tide_has_events():
         try:
             raw_sample = []
             tide_data = fetch_tide(now.date(), raw_sample)
@@ -152,12 +180,9 @@ def main():
 
     # 3) 수온 원본 응답 (격자 번호 확인용)
     try:
-        water_text = retry("water", lambda: fetch_text(
-            WATER_URL, {"analsYmd": now.strftime("%Y%m%d"), "numOfRows": "100", "pageNo": "1"}))
-        water = xml_to_dict(water_text)
-        check(water, "water")
+        day, water, water_text = fetch_water(now.date())
         save("water.json", {"updatedAt": now.isoformat(timespec="seconds"),
-                            "parsed": water, "rawHead": water_text[:1500]})
+                            "analsYmd": day, "parsed": water, "rawHead": water_text[:1500]})
     except Exception:
         failed.append("water")
         traceback.print_exc()
