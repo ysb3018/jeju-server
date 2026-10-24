@@ -14,6 +14,10 @@ TIDE_URL = "https://apis.data.go.kr/1192136/tideFcstHghLw/GetTideFcstHghLwApiSer
 # 조위관측소 실측 수온 (국립해양조사원)
 WATER_OBS_URL = "https://apis.data.go.kr/1192136/surveyWaterTemp/GetSurveyWaterTempApiService"
 WATER_OBS_CODES = {"DT_0010": "서귀포", "DT_0004": "제주"}
+# 조류예보(시계열) 예보지점 (활용가이드 목록 확인)
+CURRENT_URL = "https://apis.data.go.kr/1192136/crntFcstTime/GetCrntFcstTimeApiService"
+CURRENT_POINTS = {"08JJ07": "서귀포", "02JJ-1": "제주항", "08JJ03": "성산포", "23LTC02": "제주도 서측"}
+KNOT_PER_CMS = 1 / 51.444  # 1 knot = 51.444 cm/s
 # 예보지점: DT_0010 서귀포, DT_0004 제주, DT_0022 성산포, DT_0023 모슬포
 OBS_CODES = ["DT_0010", "DT_0004", "DT_0022", "DT_0023"]
 TYPE_MAP = {"1": "만조", "2": "간조", "3": "만조", "4": "간조"}
@@ -185,6 +189,41 @@ def fetch_water_obs(today):
     return stations
 
 
+def fetch_current(today):
+    """조류 예보지점별 시간 유향·유속. 최근 3일 안에서 처음 자료가 있는 날을 쓴다."""
+    points = {}
+    for code, name in CURRENT_POINTS.items():
+        found = None
+        for back in range(3):
+            day = (today - timedelta(days=back)).strftime("%Y%m%d")
+            payload = retry(f"current {code} {day}", lambda: get_json(
+                CURRENT_URL, {"obsCode": code, "reqDate": day, "type": "json",
+                              "min": "60", "numOfRows": "100", "pageNo": "1"}))
+            check(payload, f"current {code} {day}")
+            items = items_of(payload)
+            print(f"current {code} {day}: {len(items)} items")
+            if items:
+                found = (day, items)
+                break
+        if found:
+            day, items = found
+            rows = []
+            for i in items:
+                stamp = str(i.get("predcDt") or i.get("obsrvnDt") or "")
+                speed = float(i.get("crsp") or 0)
+                rows.append({
+                    "date": stamp[:10],
+                    "time": stamp[11:16],
+                    "dir": i.get("crdir", ""),
+                    "speedCmS": round(speed, 1),
+                    "speedKn": round(speed * KNOT_PER_CMS, 2),
+                })
+            points[code] = {"name": name, "reqDate": day, "items": rows}
+        else:
+            points[code] = {"name": name, "reqDate": None, "items": []}
+    return points
+
+
 def save(name, data):
     (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{name} saved")
@@ -231,6 +270,17 @@ def main():
             print("water: no observations in last 3 days; previous file kept")
     except Exception:
         failed.append("water")
+        traceback.print_exc()
+
+    # 4) 조류 예보지점 (자료가 없으면 이전 파일 유지)
+    try:
+        points = fetch_current(now.date())
+        if any(v["items"] for v in points.values()):
+            save("current.json", {"updatedAt": now.isoformat(timespec="seconds"), "points": points})
+        else:
+            print("current: no forecast in last 3 days; previous file kept")
+    except Exception:
+        failed.append("current")
         traceback.print_exc()
 
     # 실패한 항목이 있어도 나머지는 커밋되도록 종료 코드는 0으로 둔다
