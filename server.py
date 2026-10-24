@@ -50,8 +50,13 @@ def shortterm(now=None):
     now = now or datetime.now(KST)
     release = now - timedelta(minutes=40)
     slots = [(2, 0), (5, 0), (8, 0), (11, 0), (14, 0), (17, 0), (20, 0), (23, 0)]
-    chosen = max((h, m) for h, m in slots if (h, m) <= (release.hour, release.minute))
-    base = release.replace(hour=chosen[0], minute=chosen[1], second=0, microsecond=0)
+    candidates = [(h, m) for h, m in slots if (h, m) <= (release.hour, release.minute)]
+    if candidates:
+        chosen = max(candidates)
+        base = release.replace(hour=chosen[0], minute=chosen[1], second=0, microsecond=0)
+    else:
+        # 새벽 00~02시 40분 사이에는 아직 당일 02시 발표가 없으므로 전날 23시 발표를 사용
+        base = (release - timedelta(days=1)).replace(hour=23, minute=0, second=0, microsecond=0)
     rows = item_list(kma_json("VilageFcstInfoService_2.0/getVilageFcst", {
         "base_date": base.strftime("%Y%m%d"), "base_time": base.strftime("%H%M"),
         "nx": "48", "ny": "36", "numOfRows": "1000"
