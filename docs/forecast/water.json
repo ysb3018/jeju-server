@@ -1,0 +1,14 @@
+{
+  "updatedAt": "2026-10-25T04:45:28+09:00",
+  "parsed": {
+    "response": {
+      "header": {},
+      "body": {
+        "items": {
+          "item": []
+        }
+      }
+    }
+  },
+  "rawHead": "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n<response>\n    <numOfRows>0</numOfRows>\n    <pageNo>1</pageNo>\n    <totalCount>0</totalCount>\n</response>\n"
+}
