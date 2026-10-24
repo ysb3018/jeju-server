@@ -5,6 +5,7 @@ import time
 import traceback
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
 from server import KST, latest_tmfc, midterm, shortterm, require_key
@@ -32,13 +33,33 @@ def retry(label, fn):
     raise RuntimeError(f"{label}: all {ATTEMPTS} attempts failed") from last
 
 
-def get_json(url, params):
+def fetch_text(url, params):
     query = dict(params)
     query["serviceKey"] = require_key()
     full = url + "?" + urllib.parse.urlencode(query)
     request = urllib.request.Request(full, headers={"User-Agent": "JejuFishingApp/1.0"})
     with urllib.request.urlopen(request, timeout=90) as response:
-        return json.loads(response.read().decode("utf-8"))
+        return response.read().decode("utf-8", errors="replace")
+
+
+def get_json(url, params):
+    text = fetch_text(url, params)
+    try:
+        return json.loads(text)
+    except ValueError:
+        return xml_to_dict(text)
+
+
+def xml_to_dict(text):
+    """XML 응답을 JSON과 같은 모양(response.header / response.body.items.item)으로 바꾼다."""
+    root = ET.fromstring(text)
+    header = {c.tag: (c.text or "") for c in root.find("header")} if root.find("header") is not None else {}
+    items = []
+    body = root.find("body")
+    if body is not None:
+        for item in body.iter("item"):
+            items.append({c.tag: (c.text or "") for c in item})
+    return {"response": {"header": header, "body": {"items": {"item": items}}}}
 
 
 def items_of(payload):
@@ -131,9 +152,12 @@ def main():
 
     # 3) 수온 원본 응답 (격자 번호 확인용)
     try:
-        water = retry("water", lambda: get_json(
+        water_text = retry("water", lambda: fetch_text(
             WATER_URL, {"analsYmd": now.strftime("%Y%m%d"), "numOfRows": "100", "pageNo": "1"}))
-        save("water.json", {"updatedAt": now.isoformat(timespec="seconds"), "raw": water})
+        water = xml_to_dict(water_text)
+        check(water, "water")
+        save("water.json", {"updatedAt": now.isoformat(timespec="seconds"),
+                            "parsed": water, "rawHead": water_text[:1500]})
     except Exception:
         failed.append("water")
         traceback.print_exc()
