@@ -18,6 +18,16 @@ WATER_OBS_CODES = {"DT_0010": "서귀포", "DT_0004": "제주"}
 CURRENT_URL = "https://apis.data.go.kr/1192136/crntFcstTime/GetCrntFcstTimeApiService"
 CURRENT_POINTS = {"08JJ07": "서귀포", "02JJ-1": "제주항", "08JJ03": "성산포", "23LTC02": "제주도 서측"}
 KNOT_PER_CMS = 1 / 51.444  # 1 knot = 51.444 cm/s
+# 바다낚시지수 (국립해양조사원). 장소는 활용가이드 코드정보 기준
+FISHING_URL = "https://apis.data.go.kr/1192136/fcstFishingv2/GetFcstFishingApiServicev2"
+FISHING_PLACES = [
+    ("갯바위", "서귀포"),
+    ("갯바위", "성산포"),
+    ("갯바위", "김녕"),
+    ("갯바위", "비양도"),
+    ("갯바위", "추자도"),
+    ("선상", "도두항북서(2km)"),
+]
 # 예보지점: DT_0010 서귀포, DT_0004 제주, DT_0022 성산포, DT_0023 모슬포
 OBS_CODES = ["DT_0010", "DT_0004", "DT_0022", "DT_0023"]
 TYPE_MAP = {"1": "만조", "2": "간조", "3": "만조", "4": "간조"}
@@ -224,6 +234,35 @@ def fetch_current(today):
     return points
 
 
+def fetch_fishing(today):
+    """바다낚시지수: 장소별 7일 예보 (오전·오후). 자료가 있는 장소만 저장한다."""
+    places = {}
+    for gubun, place in FISHING_PLACES:
+        payload = retry(f"fishing {place}", lambda: get_json(
+            FISHING_URL, {"type": "json", "reqDate": today.strftime("%Y%m%d"),
+                          "gubun": gubun, "placeName": place,
+                          "pageNo": "1", "numOfRows": "100"}))
+        check(payload, f"fishing {place}")
+        items = items_of(payload)
+        print(f"fishing {gubun} {place}: {len(items)} items")
+        rows = []
+        for i in items:
+            rows.append({
+                "date": i.get("predcYmd", ""),
+                "noon": i.get("predcNoonSeCd", ""),
+                "index": i.get("totalIndex", ""),
+                "species": i.get("seafsTgfshNm", ""),
+                "tide": i.get("tdlvHrCn", ""),
+                "waveMin": i.get("minWvhgt"), "waveMax": i.get("maxWvhgt"),
+                "waterMin": i.get("minWtem"), "waterMax": i.get("maxWtem"),
+                "windMin": i.get("minWspd"), "windMax": i.get("maxWspd"),
+                "currentMax": i.get("maxCrsp"),
+            })
+        if rows:
+            places[place] = {"gubun": gubun, "items": rows}
+    return places
+
+
 def save(name, data):
     (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{name} saved")
@@ -281,6 +320,17 @@ def main():
             print("current: no forecast in last 3 days; previous file kept")
     except Exception:
         failed.append("current")
+        traceback.print_exc()
+
+    # 5) 바다낚시지수 (자료가 없으면 이전 파일 유지)
+    try:
+        places = fetch_fishing(now.date())
+        if places:
+            save("fishing.json", {"updatedAt": now.isoformat(timespec="seconds"), "places": places})
+        else:
+            print("fishing: no data; previous file kept")
+    except Exception:
+        failed.append("fishing")
         traceback.print_exc()
 
     # 실패한 항목이 있어도 나머지는 커밋되도록 종료 코드는 0으로 둔다
