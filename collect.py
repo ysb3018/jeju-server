@@ -14,7 +14,7 @@ WATER_URL = "http://apis.data.go.kr/1192000/apVhdService_Tgcw15/getOpnTgcw15"
 OBS_CODES = ["DT_0010", "DT_0004", "DT_0022", "DT_0023"]
 TYPE_MAP = {"1": "만조", "2": "간조", "3": "만조", "4": "간조"}
 OUT = pathlib.Path("docs/forecast")
-ATTEMPTS = 3
+ATTEMPTS = 5
 
 
 def retry(label, fn):
@@ -27,7 +27,7 @@ def retry(label, fn):
             last = exc
             print(f"{label}: attempt {attempt} failed: {exc}")
             if attempt < ATTEMPTS:
-                time.sleep(15 * attempt)
+                time.sleep(30 * attempt)  # 30, 60, 90, 120초 간격
     raise RuntimeError(f"{label}: all {ATTEMPTS} attempts failed") from last
 
 
@@ -36,7 +36,7 @@ def get_json(url, params):
     query["serviceKey"] = require_key()
     full = url + "?" + urllib.parse.urlencode(query)
     request = urllib.request.Request(full, headers={"User-Agent": "JejuFishingApp/1.0"})
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=90) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
