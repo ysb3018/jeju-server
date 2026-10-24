@@ -1,5 +1,6 @@
 import json
 import pathlib
+import socket
 import time
 import traceback
 import urllib.parse
@@ -78,6 +79,16 @@ def fetch_tide(start):
     return result
 
 
+def reachable(host="apis.data.go.kr", port=443, timeout=15):
+    """공공데이터 서버에 TCP 연결이 되는지 짧게 확인한다. 안 되면 실행을 빨리 끝낸다."""
+    try:
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
+    except OSError as exc:
+        print(f"precheck failed: {host}:{port} unreachable ({exc})")
+        return False
+
+
 def save(name, data):
     (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{name} saved")
@@ -87,6 +98,11 @@ def main():
     now = datetime.now(KST)
     OUT.mkdir(parents=True, exist_ok=True)
     failed = []
+
+    if not reachable():
+        # 서버에 아예 연결이 안 되면 모든 항목을 건너뛰고 빨리 끝낸다 (이전 파일 유지)
+        print("API server unreachable; skipping this run. Previous files kept.")
+        return
 
     # 1) 단기·중기 예보: 실패하면 이전 파일을 그대로 두어 앱이 마지막 정상 데이터를 보게 한다
     try:
