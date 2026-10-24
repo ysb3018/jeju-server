@@ -1,15 +1,77 @@
 {
-  "updatedAt": "2026-10-25T05:27:03+09:00",
-  "gridAndDate": "GR2_F4K23 20261023",
-  "parsed": {
-    "response": {
-      "header": {},
-      "body": {
-        "items": {
-          "item": []
+  "updatedAt": "2026-10-25T05:44:27+09:00",
+  "stations": {
+    "DT_0010": {
+      "name": "서귀포",
+      "reqDate": "20261025",
+      "items": [
+        {
+          "date": "2026-10-25",
+          "time": "00:00",
+          "tempC": 22.9
+        },
+        {
+          "date": "2026-10-25",
+          "time": "01:00",
+          "tempC": 22.6
+        },
+        {
+          "date": "2026-10-25",
+          "time": "02:00",
+          "tempC": 22.8
+        },
+        {
+          "date": "2026-10-25",
+          "time": "03:00",
+          "tempC": 23.0
+        },
+        {
+          "date": "2026-10-25",
+          "time": "04:00",
+          "tempC": 23.2
+        },
+        {
+          "date": "2026-10-25",
+          "time": "05:00",
+          "tempC": 23.4
         }
-      }
+      ]
+    },
+    "DT_0004": {
+      "name": "제주",
+      "reqDate": "20261025",
+      "items": [
+        {
+          "date": "2026-10-25",
+          "time": "00:00",
+          "tempC": 23.1
+        },
+        {
+          "date": "2026-10-25",
+          "time": "01:00",
+          "tempC": 23.1
+        },
+        {
+          "date": "2026-10-25",
+          "time": "02:00",
+          "tempC": 23.1
+        },
+        {
+          "date": "2026-10-25",
+          "time": "03:00",
+          "tempC": 23.1
+        },
+        {
+          "date": "2026-10-25",
+          "time": "04:00",
+          "tempC": 23.1
+        },
+        {
+          "date": "2026-10-25",
+          "time": "05:00",
+          "tempC": 23.1
+        }
+      ]
     }
-  },
-  "rawHead": "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n<response>\n    <numOfRows>0</numOfRows>\n    <pageNo>1</pageNo>\n    <totalCount>0</totalCount>\n</response>\n"
+  }
 }
