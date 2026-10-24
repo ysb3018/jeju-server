@@ -19,6 +19,8 @@ OUT = pathlib.Path("docs/forecast")
 ATTEMPTS = 5
 # 수온 격자 (0.25도 격자, 첨부 격자표로 확인): 서귀포 앞바다 → 제주시 앞바다 순으로 시도
 WATER_GRIDS = ["GR2_F4K43", "GR2_F4K23"]
+# 수온 자료는 최근 날짜가 늦게 올라오므로 최대 60일까지 거슬러 올라간다
+WATER_LOOKBACK_DAYS = 60
 
 
 def retry(label, fn):
@@ -134,14 +136,15 @@ def fetch_water(today):
     """격자와 날짜를 바꿔 가며 처음으로 자료가 있는 조합을 쓴다."""
     last = None
     for grid in WATER_GRIDS:
-        for back in range(3):
+        for back in range(WATER_LOOKBACK_DAYS):
             day = (today - timedelta(days=back)).strftime("%Y%m%d")
             text = retry(f"water {grid} {day}", lambda: fetch_text(
                 WATER_URL, {"analsYmd": day, "gridCd": grid, "numOfRows": "100", "pageNo": "1"}))
             parsed = xml_to_dict(text)
             check(parsed, f"water {grid} {day}")
             total = parsed["response"]["body"]["items"]["item"]
-            print(f"water {grid} {day}: {len(total)} items")
+            if total:
+                print(f"water {grid} {day}: {len(total)} items")
             last = (f"{grid} {day}", parsed, text)
             if total:
                 return last
