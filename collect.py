@@ -17,6 +17,8 @@ OBS_CODES = ["DT_0010", "DT_0004", "DT_0022", "DT_0023"]
 TYPE_MAP = {"1": "만조", "2": "간조", "3": "만조", "4": "간조"}
 OUT = pathlib.Path("docs/forecast")
 ATTEMPTS = 5
+# 수온 격자 (0.25도 격자, 첨부 격자표로 확인): 서귀포 앞바다 → 제주시 앞바다 순으로 시도
+WATER_GRIDS = ["GR2_F4K43", "GR2_F4K23"]
 
 
 def retry(label, fn):
@@ -45,9 +47,13 @@ def fetch_text(url, params):
 def get_json(url, params):
     text = fetch_text(url, params)
     try:
-        return json.loads(text)
+        data = json.loads(text)
     except ValueError:
         return xml_to_dict(text)
+    # 일부 API는 response로 감싸지 않고 header/body를 바로 준다
+    if "response" not in data and "header" in data:
+        data = {"response": data}
+    return data
 
 
 def xml_to_dict(text):
@@ -125,19 +131,20 @@ def tide_has_events():
 
 
 def fetch_water(today):
-    """오늘부터 3일 전까지 거슬러 올라가며 첫 번째로 자료가 있는 날을 쓴다."""
+    """격자와 날짜를 바꿔 가며 처음으로 자료가 있는 조합을 쓴다."""
     last = None
-    for back in range(3):
-        day = (today - timedelta(days=back)).strftime("%Y%m%d")
-        text = retry(f"water {day}", lambda: fetch_text(
-            WATER_URL, {"analsYmd": day, "numOfRows": "100", "pageNo": "1"}))
-        parsed = xml_to_dict(text)
-        check(parsed, f"water {day}")
-        total = parsed["response"]["body"]["items"]["item"]
-        print(f"water {day}: {len(total)} items")
-        last = (day, parsed, text)
-        if total:
-            return last
+    for grid in WATER_GRIDS:
+        for back in range(3):
+            day = (today - timedelta(days=back)).strftime("%Y%m%d")
+            text = retry(f"water {grid} {day}", lambda: fetch_text(
+                WATER_URL, {"analsYmd": day, "gridCd": grid, "numOfRows": "100", "pageNo": "1"}))
+            parsed = xml_to_dict(text)
+            check(parsed, f"water {grid} {day}")
+            total = parsed["response"]["body"]["items"]["item"]
+            print(f"water {grid} {day}: {len(total)} items")
+            last = (f"{grid} {day}", parsed, text)
+            if total:
+                return last
     return last
 
 
@@ -182,7 +189,7 @@ def main():
     try:
         day, water, water_text = fetch_water(now.date())
         save("water.json", {"updatedAt": now.isoformat(timespec="seconds"),
-                            "analsYmd": day, "parsed": water, "rawHead": water_text[:1500]})
+                            "gridAndDate": day, "parsed": water, "rawHead": water_text[:1500]})
     except Exception:
         failed.append("water")
         traceback.print_exc()
