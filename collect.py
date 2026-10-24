@@ -11,7 +11,9 @@ from datetime import datetime, timedelta
 from server import KST, latest_tmfc, midterm, shortterm, require_key
 
 TIDE_URL = "https://apis.data.go.kr/1192136/tideFcstHghLw/GetTideFcstHghLwApiService"
-WATER_URL = "http://apis.data.go.kr/1192000/apVhdService_Tgcw15/getOpnTgcw15"
+# 조위관측소 실측 수온 (국립해양조사원)
+WATER_OBS_URL = "https://apis.data.go.kr/1192136/surveyWaterTemp/GetSurveyWaterTempApiService"
+WATER_OBS_CODES = {"DT_0010": "서귀포", "DT_0004": "제주"}
 # 예보지점: DT_0010 서귀포, DT_0004 제주, DT_0022 성산포, DT_0023 모슬포
 OBS_CODES = ["DT_0010", "DT_0004", "DT_0022", "DT_0023"]
 TYPE_MAP = {"1": "만조", "2": "간조", "3": "만조", "4": "간조"}
@@ -151,6 +153,38 @@ def fetch_water(today):
     return last
 
 
+def fetch_water_obs(today):
+    """관측소별 실측 수온. 최근 3일 안에서 처음 자료가 있는 날을 쓴다."""
+    stations = {}
+    for code, name in WATER_OBS_CODES.items():
+        found = None
+        for back in range(3):
+            day = (today - timedelta(days=back)).strftime("%Y%m%d")
+            payload = retry(f"water {code} {day}", lambda: get_json(
+                WATER_OBS_URL, {"obsCode": code, "reqDate": day, "type": "json",
+                                "min": "60", "numOfRows": "100", "pageNo": "1"}))
+            check(payload, f"water {code} {day}")
+            items = items_of(payload)
+            print(f"water {code} {day}: {len(items)} items")
+            if items:
+                found = (day, items)
+                break
+        if found:
+            day, items = found
+            stations[code] = {
+                "name": name,
+                "reqDate": day,
+                "items": [{
+                    "date": str(i.get("obsrvnDt", ""))[:10],
+                    "time": str(i.get("obsrvnDt", ""))[11:16],
+                    "tempC": i.get("wtem"),
+                } for i in items],
+            }
+        else:
+            stations[code] = {"name": name, "reqDate": None, "items": []}
+    return stations
+
+
 def save(name, data):
     (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{name} saved")
@@ -188,11 +222,13 @@ def main():
             failed.append("tide")
             traceback.print_exc()
 
-    # 3) 수온 원본 응답 (격자 번호 확인용)
+    # 3) 조위관측소 실측 수온 (자료가 하나도 없으면 이전 파일 유지)
     try:
-        day, water, water_text = fetch_water(now.date())
-        save("water.json", {"updatedAt": now.isoformat(timespec="seconds"),
-                            "gridAndDate": day, "parsed": water, "rawHead": water_text[:1500]})
+        stations = fetch_water_obs(now.date())
+        if any(v["items"] for v in stations.values()):
+            save("water.json", {"updatedAt": now.isoformat(timespec="seconds"), "stations": stations})
+        else:
+            print("water: no observations in last 3 days; previous file kept")
     except Exception:
         failed.append("water")
         traceback.print_exc()
