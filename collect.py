@@ -200,37 +200,32 @@ def fetch_water_obs(today):
 
 
 def fetch_current(today):
-    """조류 예보지점별 시간 유향·유속. 최근 3일 안에서 처음 자료가 있는 날을 쓴다."""
+    """조류 예보지점별 시간 유향·유속. 오늘부터 7일치를 받는다 (날짜가 바뀌어도 자료가 끊기지 않도록)."""
     points = {}
     for code, name in CURRENT_POINTS.items():
-        found = None
-        for back in range(3):
-            day = (today - timedelta(days=back)).strftime("%Y%m%d")
+        seen = {}
+        for offset in range(7):
+            day = (today + timedelta(days=offset)).strftime("%Y%m%d")
             payload = retry(f"current {code} {day}", lambda: get_json(
                 CURRENT_URL, {"obsCode": code, "reqDate": day, "type": "json",
                               "min": "60", "numOfRows": "100", "pageNo": "1"}))
             check(payload, f"current {code} {day}")
             items = items_of(payload)
             print(f"current {code} {day}: {len(items)} items")
-            if items:
-                found = (day, items)
-                break
-        if found:
-            day, items = found
-            rows = []
             for i in items:
                 stamp = str(i.get("predcDt") or i.get("obsrvnDt") or "")
+                if not stamp:
+                    continue
                 speed = float(i.get("crsp") or 0)
-                rows.append({
+                seen[stamp[:16]] = {
                     "date": stamp[:10],
                     "time": stamp[11:16],
                     "dir": i.get("crdir", ""),
                     "speedCmS": round(speed, 1),
                     "speedKn": round(speed * KNOT_PER_CMS, 2),
-                })
-            points[code] = {"name": name, "reqDate": day, "items": rows}
-        else:
-            points[code] = {"name": name, "reqDate": None, "items": []}
+                }
+        rows = [seen[k] for k in sorted(seen)]
+        points[code] = {"name": name, "reqDate": today.strftime("%Y%m%d"), "items": rows}
     return points
 
 
