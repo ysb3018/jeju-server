@@ -140,6 +140,36 @@ def reachable(host="apis.data.go.kr", port=443, timeout=30, attempts=3):
     return False
 
 
+def tide_has_events():
+    path = OUT / "tide.json"
+    if not path.exists():
+        return False
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return any(data.get("obsCodes", {}).values())
+    except ValueError:
+        return False
+
+
+def fetch_water(today):
+    """격자와 날짜를 바꿔 가며 처음으로 자료가 있는 조합을 쓴다."""
+    last = None
+    for grid in WATER_GRIDS:
+        for back in range(WATER_LOOKBACK_DAYS):
+            day = (today - timedelta(days=back)).strftime("%Y%m%d")
+            text = retry(f"water {grid} {day}", lambda: fetch_text(
+                WATER_URL, {"analsYmd": day, "gridCd": grid, "numOfRows": "100", "pageNo": "1"}))
+            parsed = xml_to_dict(text)
+            check(parsed, f"water {grid} {day}")
+            total = parsed["response"]["body"]["items"]["item"]
+            if total:
+                print(f"water {grid} {day}: {len(total)} items")
+            last = (f"{grid} {day}", parsed, text)
+            if total:
+                return last
+    return last
+
+
 def fetch_water_obs(today):
     """관측소별 실측 수온. 최근 3일 안에서 처음 자료가 있는 날을 쓴다."""
     stations = {}
