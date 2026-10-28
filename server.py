@@ -67,12 +67,12 @@ def shortterm(now=None):
     days = {}
     for (date_key, time_key), values in grouped.items():
         d = days.setdefault(date_key, {"date": f"{date_key[:4]}-{date_key[4:6]}-{date_key[6:]}", "hours": []})
-        d["hours"].append({"time": time_key, "temp": values.get("TMP"), "windSpeed": values.get("WSD"), "windDirection": values.get("VEC"), "wave": values.get("WAV"), "rainProbability": values.get("POP"), "sky": values.get("SKY"), "precipitationType": values.get("PTY"), "rainAmount": values.get("PCP")})
+        d["hours"].append({"time": time_key, "temp": values.get("TMP"), "windSpeed": values.get("WSD"), "windDirection": values.get("VEC"), "rainProbability": values.get("POP"), "sky": values.get("SKY"), "precipitationType": values.get("PTY"), "rainAmount": values.get("PCP")})
     result = []
     for d in sorted(days.values(), key=lambda x: x["date"]):
         temps = [float(x["temp"]) for x in d["hours"] if str(x.get("temp", "")).replace('.', '', 1).isdigit()]
         pops = [int(float(x["rainProbability"])) for x in d["hours"] if str(x.get("rainProbability", "")).replace('.', '', 1).isdigit()]
-        sampled = [x for x in d["hours"] if x["time"] in {"0600", "0900", "1200", "1500", "1800", "2100"}]
+        sampled = sorted((x for x in d["hours"] if x["time"] in {"0000", "0300", "0600", "0900", "1200", "1500", "1800", "2100"}), key=lambda x: x["time"])
         result.append({"date": d["date"], "minTemp": min(temps) if temps else None, "maxTemp": max(temps) if temps else None, "rainProbability": max(pops) if pops else None, "hours": sampled, "source": "KMA 단기예보 · 한림읍 nx=48 ny=36"})
     return {"baseTime": base.strftime("%Y%m%d%H%M"), "days": result}
 
