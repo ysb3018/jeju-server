@@ -1,29 +1,19 @@
 {
-  "updatedAt": "2026-10-28T20:31:27+09:00",
+  "updatedAt": "2026-10-28T21:35:02+09:00",
   "shortTerm": {
-    "baseTime": "202610281700",
+    "baseTime": "202610282000",
     "days": [
       {
         "date": "2026-10-28",
         "minTemp": 11.0,
-        "maxTemp": 13.0,
+        "maxTemp": 12.0,
         "rainProbability": 0,
         "hours": [
           {
-            "time": "1800",
-            "temp": "13",
-            "windSpeed": "3.1",
-            "windDirection": "27",
-            "rainProbability": "0",
-            "sky": "1",
-            "precipitationType": "0",
-            "rainAmount": "강수없음"
-          },
-          {
             "time": "2100",
             "temp": "12",
-            "windSpeed": "2",
-            "windDirection": "61",
+            "windSpeed": "1.9",
+            "windDirection": "62",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -41,8 +31,8 @@
           {
             "time": "0000",
             "temp": "11",
-            "windSpeed": "1.5",
-            "windDirection": "125",
+            "windSpeed": "1.4",
+            "windDirection": "124",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -51,7 +41,7 @@
           {
             "time": "0300",
             "temp": "12",
-            "windSpeed": "2.6",
+            "windSpeed": "2.5",
             "windDirection": "157",
             "rainProbability": "30",
             "sky": "4",
@@ -71,8 +61,8 @@
           {
             "time": "0900",
             "temp": "16",
-            "windSpeed": "1.4",
-            "windDirection": "258",
+            "windSpeed": "1.3",
+            "windDirection": "261",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -81,8 +71,8 @@
           {
             "time": "1200",
             "temp": "18",
-            "windSpeed": "0.4",
-            "windDirection": "284",
+            "windSpeed": "0.3",
+            "windDirection": "270",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -91,8 +81,8 @@
           {
             "time": "1500",
             "temp": "20",
-            "windSpeed": "2.5",
-            "windDirection": "182",
+            "windSpeed": "2.4",
+            "windDirection": "180",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -101,8 +91,8 @@
           {
             "time": "1800",
             "temp": "17",
-            "windSpeed": "4.4",
-            "windDirection": "179",
+            "windSpeed": "4.3",
+            "windDirection": "180",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -111,8 +101,8 @@
           {
             "time": "2100",
             "temp": "17",
-            "windSpeed": "5",
-            "windDirection": "202",
+            "windSpeed": "4.9",
+            "windDirection": "201",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -130,7 +120,7 @@
           {
             "time": "0000",
             "temp": "17",
-            "windSpeed": "4.4",
+            "windSpeed": "4.2",
             "windDirection": "242",
             "rainProbability": "60",
             "sky": "4",
@@ -140,7 +130,7 @@
           {
             "time": "0300",
             "temp": "17",
-            "windSpeed": "4.6",
+            "windSpeed": "4.5",
             "windDirection": "288",
             "rainProbability": "60",
             "sky": "4",
@@ -150,7 +140,7 @@
           {
             "time": "0600",
             "temp": "17",
-            "windSpeed": "3.8",
+            "windSpeed": "3.7",
             "windDirection": "314",
             "rainProbability": "30",
             "sky": "4",
@@ -160,7 +150,7 @@
           {
             "time": "0900",
             "temp": "18",
-            "windSpeed": "4.2",
+            "windSpeed": "4.1",
             "windDirection": "315",
             "rainProbability": "30",
             "sky": "4",
@@ -170,7 +160,7 @@
           {
             "time": "1200",
             "temp": "20",
-            "windSpeed": "4.6",
+            "windSpeed": "4.5",
             "windDirection": "310",
             "rainProbability": "0",
             "sky": "1",
@@ -180,7 +170,7 @@
           {
             "time": "1500",
             "temp": "20",
-            "windSpeed": "4.9",
+            "windSpeed": "4.8",
             "windDirection": "315",
             "rainProbability": "0",
             "sky": "1",
@@ -190,7 +180,7 @@
           {
             "time": "1800",
             "temp": "18",
-            "windSpeed": "3.9",
+            "windSpeed": "3.8",
             "windDirection": "315",
             "rainProbability": "0",
             "sky": "1",
@@ -200,7 +190,7 @@
           {
             "time": "2100",
             "temp": "17",
-            "windSpeed": "4.1",
+            "windSpeed": "3.9",
             "windDirection": "315",
             "rainProbability": "0",
             "sky": "1",
@@ -219,8 +209,8 @@
           {
             "time": "0000",
             "temp": "16",
-            "windSpeed": "3.4",
-            "windDirection": "310",
+            "windSpeed": "3.3",
+            "windDirection": "309",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -229,8 +219,8 @@
           {
             "time": "0300",
             "temp": "16",
-            "windSpeed": "3.9",
-            "windDirection": "310",
+            "windSpeed": "3.8",
+            "windDirection": "311",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -239,7 +229,7 @@
           {
             "time": "0600",
             "temp": "16",
-            "windSpeed": "4",
+            "windSpeed": "3.9",
             "windDirection": "320",
             "rainProbability": "0",
             "sky": "1",
@@ -249,7 +239,7 @@
           {
             "time": "0900",
             "temp": "19",
-            "windSpeed": "4.6",
+            "windSpeed": "4.4",
             "windDirection": "333",
             "rainProbability": "0",
             "sky": "1",
@@ -259,8 +249,8 @@
           {
             "time": "1200",
             "temp": "20",
-            "windSpeed": "4.7",
-            "windDirection": "354",
+            "windSpeed": "4.6",
+            "windDirection": "355",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -269,8 +259,8 @@
           {
             "time": "1500",
             "temp": "20",
-            "windSpeed": "5",
-            "windDirection": "1",
+            "windSpeed": "4.9",
+            "windDirection": "0",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -279,8 +269,8 @@
           {
             "time": "1800",
             "temp": "16",
-            "windSpeed": "4",
-            "windDirection": "13",
+            "windSpeed": "3.8",
+            "windDirection": "12",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -289,8 +279,8 @@
           {
             "time": "2100",
             "temp": "15",
-            "windSpeed": "3.6",
-            "windDirection": "33",
+            "windSpeed": "3.5",
+            "windDirection": "32",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -302,14 +292,14 @@
       {
         "date": "2026-11-01",
         "minTemp": 14.0,
-        "maxTemp": 20.0,
-        "rainProbability": 30,
+        "maxTemp": 22.0,
+        "rainProbability": 60,
         "hours": [
           {
             "time": "0000",
             "temp": "14",
-            "windSpeed": "3.2",
-            "windDirection": "52",
+            "windSpeed": "3.1",
+            "windDirection": "53",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -339,7 +329,7 @@
             "time": "0900",
             "temp": "18",
             "windSpeed": "1",
-            "windDirection": "111",
+            "windDirection": "110",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -353,6 +343,36 @@
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
+            "rainAmount": "0"
+          },
+          {
+            "time": "1500",
+            "temp": "22",
+            "windSpeed": "2",
+            "windDirection": "162",
+            "rainProbability": "20",
+            "sky": "3",
+            "precipitationType": "0",
+            "rainAmount": "0"
+          },
+          {
+            "time": "1800",
+            "temp": "20",
+            "windSpeed": "2",
+            "windDirection": "177",
+            "rainProbability": "20",
+            "sky": "3",
+            "precipitationType": "0",
+            "rainAmount": "0"
+          },
+          {
+            "time": "2100",
+            "temp": "20",
+            "windSpeed": "2",
+            "windDirection": "189",
+            "rainProbability": "60",
+            "sky": "4",
+            "precipitationType": "1",
             "rainAmount": null
           }
         ],
