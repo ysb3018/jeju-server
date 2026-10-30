@@ -1,178 +1,10 @@
 {
-  "updatedAt": "2026-10-30T23:46:26+09:00",
+  "updatedAt": "2026-10-31T01:38:17+09:00",
   "points": {
     "08JJ07": {
       "name": "서귀포",
-      "reqDate": "20261030",
+      "reqDate": "20261031",
       "items": [
-        {
-          "date": "2026-10-30",
-          "time": "00:00",
-          "dir": "서북서",
-          "speedCmS": 11.7,
-          "speedKn": 0.23
-        },
-        {
-          "date": "2026-10-30",
-          "time": "01:00",
-          "dir": "서북서",
-          "speedCmS": 3.5,
-          "speedKn": 0.07
-        },
-        {
-          "date": "2026-10-30",
-          "time": "02:00",
-          "dir": "동",
-          "speedCmS": 6.0,
-          "speedKn": 0.12
-        },
-        {
-          "date": "2026-10-30",
-          "time": "03:00",
-          "dir": "동",
-          "speedCmS": 16.7,
-          "speedKn": 0.32
-        },
-        {
-          "date": "2026-10-30",
-          "time": "04:00",
-          "dir": "동",
-          "speedCmS": 26.7,
-          "speedKn": 0.52
-        },
-        {
-          "date": "2026-10-30",
-          "time": "05:00",
-          "dir": "동",
-          "speedCmS": 29.1,
-          "speedKn": 0.57
-        },
-        {
-          "date": "2026-10-30",
-          "time": "06:00",
-          "dir": "동",
-          "speedCmS": 20.2,
-          "speedKn": 0.39
-        },
-        {
-          "date": "2026-10-30",
-          "time": "07:00",
-          "dir": "동",
-          "speedCmS": 5.3,
-          "speedKn": 0.1
-        },
-        {
-          "date": "2026-10-30",
-          "time": "08:00",
-          "dir": "서",
-          "speedCmS": 8.7,
-          "speedKn": 0.17
-        },
-        {
-          "date": "2026-10-30",
-          "time": "09:00",
-          "dir": "서",
-          "speedCmS": 19.8,
-          "speedKn": 0.38
-        },
-        {
-          "date": "2026-10-30",
-          "time": "10:00",
-          "dir": "서",
-          "speedCmS": 29.3,
-          "speedKn": 0.57
-        },
-        {
-          "date": "2026-10-30",
-          "time": "11:00",
-          "dir": "서",
-          "speedCmS": 34.2,
-          "speedKn": 0.67
-        },
-        {
-          "date": "2026-10-30",
-          "time": "12:00",
-          "dir": "서",
-          "speedCmS": 31.1,
-          "speedKn": 0.61
-        },
-        {
-          "date": "2026-10-30",
-          "time": "13:00",
-          "dir": "서남서",
-          "speedCmS": 21.6,
-          "speedKn": 0.42
-        },
-        {
-          "date": "2026-10-30",
-          "time": "14:00",
-          "dir": "남서",
-          "speedCmS": 10.7,
-          "speedKn": 0.21
-        },
-        {
-          "date": "2026-10-30",
-          "time": "15:00",
-          "dir": "남동",
-          "speedCmS": 9.3,
-          "speedKn": 0.18
-        },
-        {
-          "date": "2026-10-30",
-          "time": "16:00",
-          "dir": "동",
-          "speedCmS": 22.7,
-          "speedKn": 0.44
-        },
-        {
-          "date": "2026-10-30",
-          "time": "17:00",
-          "dir": "동",
-          "speedCmS": 33.9,
-          "speedKn": 0.66
-        },
-        {
-          "date": "2026-10-30",
-          "time": "18:00",
-          "dir": "동",
-          "speedCmS": 34.7,
-          "speedKn": 0.67
-        },
-        {
-          "date": "2026-10-30",
-          "time": "19:00",
-          "dir": "동",
-          "speedCmS": 26.1,
-          "speedKn": 0.51
-        },
-        {
-          "date": "2026-10-30",
-          "time": "20:00",
-          "dir": "동",
-          "speedCmS": 15.4,
-          "speedKn": 0.3
-        },
-        {
-          "date": "2026-10-30",
-          "time": "21:00",
-          "dir": "동",
-          "speedCmS": 6.2,
-          "speedKn": 0.12
-        },
-        {
-          "date": "2026-10-30",
-          "time": "22:00",
-          "dir": "서북서",
-          "speedCmS": 2.7,
-          "speedKn": 0.05
-        },
-        {
-          "date": "2026-10-30",
-          "time": "23:00",
-          "dir": "서북서",
-          "speedCmS": 10.2,
-          "speedKn": 0.2
-        },
         {
           "date": "2026-10-31",
           "time": "00:00",
@@ -1180,181 +1012,181 @@
           "dir": "동",
           "speedCmS": 19.5,
           "speedKn": 0.38
+        },
+        {
+          "date": "2026-11-06",
+          "time": "00:00",
+          "dir": "동",
+          "speedCmS": 28.9,
+          "speedKn": 0.56
+        },
+        {
+          "date": "2026-11-06",
+          "time": "01:00",
+          "dir": "동",
+          "speedCmS": 30.8,
+          "speedKn": 0.6
+        },
+        {
+          "date": "2026-11-06",
+          "time": "02:00",
+          "dir": "동",
+          "speedCmS": 24.6,
+          "speedKn": 0.48
+        },
+        {
+          "date": "2026-11-06",
+          "time": "03:00",
+          "dir": "동",
+          "speedCmS": 14.2,
+          "speedKn": 0.28
+        },
+        {
+          "date": "2026-11-06",
+          "time": "04:00",
+          "dir": "동남동",
+          "speedCmS": 3.7,
+          "speedKn": 0.07
+        },
+        {
+          "date": "2026-11-06",
+          "time": "05:00",
+          "dir": "서남서",
+          "speedCmS": 6.0,
+          "speedKn": 0.12
+        },
+        {
+          "date": "2026-11-06",
+          "time": "06:00",
+          "dir": "서",
+          "speedCmS": 12.3,
+          "speedKn": 0.24
+        },
+        {
+          "date": "2026-11-06",
+          "time": "07:00",
+          "dir": "서남서",
+          "speedCmS": 14.1,
+          "speedKn": 0.27
+        },
+        {
+          "date": "2026-11-06",
+          "time": "08:00",
+          "dir": "서남서",
+          "speedCmS": 11.9,
+          "speedKn": 0.23
+        },
+        {
+          "date": "2026-11-06",
+          "time": "09:00",
+          "dir": "남서",
+          "speedCmS": 7.6,
+          "speedKn": 0.15
+        },
+        {
+          "date": "2026-11-06",
+          "time": "10:00",
+          "dir": "남동",
+          "speedCmS": 6.4,
+          "speedKn": 0.12
+        },
+        {
+          "date": "2026-11-06",
+          "time": "11:00",
+          "dir": "동",
+          "speedCmS": 18.0,
+          "speedKn": 0.35
+        },
+        {
+          "date": "2026-11-06",
+          "time": "12:00",
+          "dir": "동",
+          "speedCmS": 31.4,
+          "speedKn": 0.61
+        },
+        {
+          "date": "2026-11-06",
+          "time": "13:00",
+          "dir": "동",
+          "speedCmS": 37.6,
+          "speedKn": 0.73
+        },
+        {
+          "date": "2026-11-06",
+          "time": "14:00",
+          "dir": "동",
+          "speedCmS": 33.4,
+          "speedKn": 0.65
+        },
+        {
+          "date": "2026-11-06",
+          "time": "15:00",
+          "dir": "동",
+          "speedCmS": 22.5,
+          "speedKn": 0.44
+        },
+        {
+          "date": "2026-11-06",
+          "time": "16:00",
+          "dir": "동남동",
+          "speedCmS": 10.4,
+          "speedKn": 0.2
+        },
+        {
+          "date": "2026-11-06",
+          "time": "17:00",
+          "dir": "남남서",
+          "speedCmS": 5.2,
+          "speedKn": 0.1
+        },
+        {
+          "date": "2026-11-06",
+          "time": "18:00",
+          "dir": "서남서",
+          "speedCmS": 12.7,
+          "speedKn": 0.25
+        },
+        {
+          "date": "2026-11-06",
+          "time": "19:00",
+          "dir": "서남서",
+          "speedCmS": 16.3,
+          "speedKn": 0.32
+        },
+        {
+          "date": "2026-11-06",
+          "time": "20:00",
+          "dir": "서남서",
+          "speedCmS": 14.5,
+          "speedKn": 0.28
+        },
+        {
+          "date": "2026-11-06",
+          "time": "21:00",
+          "dir": "서남서",
+          "speedCmS": 9.8,
+          "speedKn": 0.19
+        },
+        {
+          "date": "2026-11-06",
+          "time": "22:00",
+          "dir": "남남서",
+          "speedCmS": 3.9,
+          "speedKn": 0.08
+        },
+        {
+          "date": "2026-11-06",
+          "time": "23:00",
+          "dir": "동",
+          "speedCmS": 10.9,
+          "speedKn": 0.21
         }
       ]
     },
     "02JJ-1": {
       "name": "제주항",
-      "reqDate": "20261030",
+      "reqDate": "20261031",
       "items": [
-        {
-          "date": "2026-10-30",
-          "time": "00:00",
-          "dir": "서남서",
-          "speedCmS": 18.4,
-          "speedKn": 0.36
-        },
-        {
-          "date": "2026-10-30",
-          "time": "01:00",
-          "dir": "서남서",
-          "speedCmS": 11.4,
-          "speedKn": 0.22
-        },
-        {
-          "date": "2026-10-30",
-          "time": "02:00",
-          "dir": "남남동",
-          "speedCmS": 2.2,
-          "speedKn": 0.04
-        },
-        {
-          "date": "2026-10-30",
-          "time": "03:00",
-          "dir": "동북동",
-          "speedCmS": 11.5,
-          "speedKn": 0.22
-        },
-        {
-          "date": "2026-10-30",
-          "time": "04:00",
-          "dir": "동북동",
-          "speedCmS": 22.6,
-          "speedKn": 0.44
-        },
-        {
-          "date": "2026-10-30",
-          "time": "05:00",
-          "dir": "동북동",
-          "speedCmS": 32.5,
-          "speedKn": 0.63
-        },
-        {
-          "date": "2026-10-30",
-          "time": "06:00",
-          "dir": "동북동",
-          "speedCmS": 36.7,
-          "speedKn": 0.71
-        },
-        {
-          "date": "2026-10-30",
-          "time": "07:00",
-          "dir": "동북동",
-          "speedCmS": 32.1,
-          "speedKn": 0.62
-        },
-        {
-          "date": "2026-10-30",
-          "time": "08:00",
-          "dir": "동북동",
-          "speedCmS": 19.2,
-          "speedKn": 0.37
-        },
-        {
-          "date": "2026-10-30",
-          "time": "09:00",
-          "dir": "남남동",
-          "speedCmS": 2.1,
-          "speedKn": 0.04
-        },
-        {
-          "date": "2026-10-30",
-          "time": "10:00",
-          "dir": "서남서",
-          "speedCmS": 22.4,
-          "speedKn": 0.44
-        },
-        {
-          "date": "2026-10-30",
-          "time": "11:00",
-          "dir": "서남서",
-          "speedCmS": 39.5,
-          "speedKn": 0.77
-        },
-        {
-          "date": "2026-10-30",
-          "time": "12:00",
-          "dir": "서남서",
-          "speedCmS": 42.3,
-          "speedKn": 0.82
-        },
-        {
-          "date": "2026-10-30",
-          "time": "13:00",
-          "dir": "서남서",
-          "speedCmS": 29.7,
-          "speedKn": 0.58
-        },
-        {
-          "date": "2026-10-30",
-          "time": "14:00",
-          "dir": "서",
-          "speedCmS": 9.8,
-          "speedKn": 0.19
-        },
-        {
-          "date": "2026-10-30",
-          "time": "15:00",
-          "dir": "동북동",
-          "speedCmS": 9.8,
-          "speedKn": 0.19
-        },
-        {
-          "date": "2026-10-30",
-          "time": "16:00",
-          "dir": "동북동",
-          "speedCmS": 26.4,
-          "speedKn": 0.51
-        },
-        {
-          "date": "2026-10-30",
-          "time": "17:00",
-          "dir": "동북동",
-          "speedCmS": 39.6,
-          "speedKn": 0.77
-        },
-        {
-          "date": "2026-10-30",
-          "time": "18:00",
-          "dir": "동북동",
-          "speedCmS": 47.3,
-          "speedKn": 0.92
-        },
-        {
-          "date": "2026-10-30",
-          "time": "19:00",
-          "dir": "동",
-          "speedCmS": 48.2,
-          "speedKn": 0.94
-        },
-        {
-          "date": "2026-10-30",
-          "time": "20:00",
-          "dir": "동",
-          "speedCmS": 43.6,
-          "speedKn": 0.85
-        },
-        {
-          "date": "2026-10-30",
-          "time": "21:00",
-          "dir": "동",
-          "speedCmS": 34.0,
-          "speedKn": 0.66
-        },
-        {
-          "date": "2026-10-30",
-          "time": "22:00",
-          "dir": "동남동",
-          "speedCmS": 18.7,
-          "speedKn": 0.36
-        },
-        {
-          "date": "2026-10-30",
-          "time": "23:00",
-          "dir": "남",
-          "speedCmS": 5.2,
-          "speedKn": 0.1
-        },
         {
           "date": "2026-10-31",
           "time": "00:00",
@@ -2362,181 +2194,181 @@
           "dir": "동",
           "speedCmS": 4.8,
           "speedKn": 0.09
+        },
+        {
+          "date": "2026-11-06",
+          "time": "00:00",
+          "dir": "동북동",
+          "speedCmS": 15.9,
+          "speedKn": 0.31
+        },
+        {
+          "date": "2026-11-06",
+          "time": "01:00",
+          "dir": "동북동",
+          "speedCmS": 25.2,
+          "speedKn": 0.49
+        },
+        {
+          "date": "2026-11-06",
+          "time": "02:00",
+          "dir": "동북동",
+          "speedCmS": 26.2,
+          "speedKn": 0.51
+        },
+        {
+          "date": "2026-11-06",
+          "time": "03:00",
+          "dir": "동북동",
+          "speedCmS": 18.7,
+          "speedKn": 0.36
+        },
+        {
+          "date": "2026-11-06",
+          "time": "04:00",
+          "dir": "동북동",
+          "speedCmS": 7.9,
+          "speedKn": 0.15
+        },
+        {
+          "date": "2026-11-06",
+          "time": "05:00",
+          "dir": "서북서",
+          "speedCmS": 5.2,
+          "speedKn": 0.1
+        },
+        {
+          "date": "2026-11-06",
+          "time": "06:00",
+          "dir": "서",
+          "speedCmS": 16.5,
+          "speedKn": 0.32
+        },
+        {
+          "date": "2026-11-06",
+          "time": "07:00",
+          "dir": "서남서",
+          "speedCmS": 23.9,
+          "speedKn": 0.46
+        },
+        {
+          "date": "2026-11-06",
+          "time": "08:00",
+          "dir": "서남서",
+          "speedCmS": 21.0,
+          "speedKn": 0.41
+        },
+        {
+          "date": "2026-11-06",
+          "time": "09:00",
+          "dir": "서남서",
+          "speedCmS": 9.7,
+          "speedKn": 0.19
+        },
+        {
+          "date": "2026-11-06",
+          "time": "10:00",
+          "dir": "남동",
+          "speedCmS": 3.0,
+          "speedKn": 0.06
+        },
+        {
+          "date": "2026-11-06",
+          "time": "11:00",
+          "dir": "동",
+          "speedCmS": 11.1,
+          "speedKn": 0.21
+        },
+        {
+          "date": "2026-11-06",
+          "time": "12:00",
+          "dir": "동",
+          "speedCmS": 20.2,
+          "speedKn": 0.39
+        },
+        {
+          "date": "2026-11-06",
+          "time": "13:00",
+          "dir": "동",
+          "speedCmS": 30.0,
+          "speedKn": 0.58
+        },
+        {
+          "date": "2026-11-06",
+          "time": "14:00",
+          "dir": "동",
+          "speedCmS": 34.1,
+          "speedKn": 0.66
+        },
+        {
+          "date": "2026-11-06",
+          "time": "15:00",
+          "dir": "동",
+          "speedCmS": 28.9,
+          "speedKn": 0.56
+        },
+        {
+          "date": "2026-11-06",
+          "time": "16:00",
+          "dir": "동",
+          "speedCmS": 17.6,
+          "speedKn": 0.34
+        },
+        {
+          "date": "2026-11-06",
+          "time": "17:00",
+          "dir": "동",
+          "speedCmS": 3.2,
+          "speedKn": 0.06
+        },
+        {
+          "date": "2026-11-06",
+          "time": "18:00",
+          "dir": "서",
+          "speedCmS": 13.7,
+          "speedKn": 0.27
+        },
+        {
+          "date": "2026-11-06",
+          "time": "19:00",
+          "dir": "서남서",
+          "speedCmS": 29.1,
+          "speedKn": 0.57
+        },
+        {
+          "date": "2026-11-06",
+          "time": "20:00",
+          "dir": "서남서",
+          "speedCmS": 34.1,
+          "speedKn": 0.66
+        },
+        {
+          "date": "2026-11-06",
+          "time": "21:00",
+          "dir": "서남서",
+          "speedCmS": 26.3,
+          "speedKn": 0.51
+        },
+        {
+          "date": "2026-11-06",
+          "time": "22:00",
+          "dir": "서남서",
+          "speedCmS": 13.4,
+          "speedKn": 0.26
+        },
+        {
+          "date": "2026-11-06",
+          "time": "23:00",
+          "dir": "남남서",
+          "speedCmS": 2.8,
+          "speedKn": 0.05
         }
       ]
     },
     "08JJ03": {
       "name": "성산포",
-      "reqDate": "20261030",
+      "reqDate": "20261031",
       "items": [
-        {
-          "date": "2026-10-30",
-          "time": "00:00",
-          "dir": "북북서",
-          "speedCmS": 30.0,
-          "speedKn": 0.58
-        },
-        {
-          "date": "2026-10-30",
-          "time": "01:00",
-          "dir": "북북서",
-          "speedCmS": 23.6,
-          "speedKn": 0.46
-        },
-        {
-          "date": "2026-10-30",
-          "time": "02:00",
-          "dir": "동북동",
-          "speedCmS": 5.0,
-          "speedKn": 0.1
-        },
-        {
-          "date": "2026-10-30",
-          "time": "03:00",
-          "dir": "남동",
-          "speedCmS": 38.5,
-          "speedKn": 0.75
-        },
-        {
-          "date": "2026-10-30",
-          "time": "04:00",
-          "dir": "남동",
-          "speedCmS": 61.1,
-          "speedKn": 1.19
-        },
-        {
-          "date": "2026-10-30",
-          "time": "05:00",
-          "dir": "남동",
-          "speedCmS": 54.8,
-          "speedKn": 1.06
-        },
-        {
-          "date": "2026-10-30",
-          "time": "06:00",
-          "dir": "남동",
-          "speedCmS": 36.9,
-          "speedKn": 0.72
-        },
-        {
-          "date": "2026-10-30",
-          "time": "07:00",
-          "dir": "남동",
-          "speedCmS": 22.1,
-          "speedKn": 0.43
-        },
-        {
-          "date": "2026-10-30",
-          "time": "08:00",
-          "dir": "북동",
-          "speedCmS": 15.5,
-          "speedKn": 0.3
-        },
-        {
-          "date": "2026-10-30",
-          "time": "09:00",
-          "dir": "북",
-          "speedCmS": 38.7,
-          "speedKn": 0.75
-        },
-        {
-          "date": "2026-10-30",
-          "time": "10:00",
-          "dir": "북북서",
-          "speedCmS": 57.2,
-          "speedKn": 1.11
-        },
-        {
-          "date": "2026-10-30",
-          "time": "11:00",
-          "dir": "북북서",
-          "speedCmS": 55.4,
-          "speedKn": 1.08
-        },
-        {
-          "date": "2026-10-30",
-          "time": "12:00",
-          "dir": "북북서",
-          "speedCmS": 47.5,
-          "speedKn": 0.92
-        },
-        {
-          "date": "2026-10-30",
-          "time": "13:00",
-          "dir": "북북서",
-          "speedCmS": 43.7,
-          "speedKn": 0.85
-        },
-        {
-          "date": "2026-10-30",
-          "time": "14:00",
-          "dir": "북서",
-          "speedCmS": 29.8,
-          "speedKn": 0.58
-        },
-        {
-          "date": "2026-10-30",
-          "time": "15:00",
-          "dir": "동남동",
-          "speedCmS": 3.7,
-          "speedKn": 0.07
-        },
-        {
-          "date": "2026-10-30",
-          "time": "16:00",
-          "dir": "남동",
-          "speedCmS": 35.9,
-          "speedKn": 0.7
-        },
-        {
-          "date": "2026-10-30",
-          "time": "17:00",
-          "dir": "남동",
-          "speedCmS": 47.4,
-          "speedKn": 0.92
-        },
-        {
-          "date": "2026-10-30",
-          "time": "18:00",
-          "dir": "남동",
-          "speedCmS": 43.6,
-          "speedKn": 0.85
-        },
-        {
-          "date": "2026-10-30",
-          "time": "19:00",
-          "dir": "남동",
-          "speedCmS": 37.8,
-          "speedKn": 0.73
-        },
-        {
-          "date": "2026-10-30",
-          "time": "20:00",
-          "dir": "남동",
-          "speedCmS": 25.1,
-          "speedKn": 0.49
-        },
-        {
-          "date": "2026-10-30",
-          "time": "21:00",
-          "dir": "북동",
-          "speedCmS": 7.3,
-          "speedKn": 0.14
-        },
-        {
-          "date": "2026-10-30",
-          "time": "22:00",
-          "dir": "북북서",
-          "speedCmS": 29.1,
-          "speedKn": 0.57
-        },
-        {
-          "date": "2026-10-30",
-          "time": "23:00",
-          "dir": "북북서",
-          "speedCmS": 36.6,
-          "speedKn": 0.71
-        },
         {
           "date": "2026-10-31",
           "time": "00:00",
@@ -3544,181 +3376,181 @@
           "dir": "남동",
           "speedCmS": 33.7,
           "speedKn": 0.66
+        },
+        {
+          "date": "2026-11-06",
+          "time": "00:00",
+          "dir": "남동",
+          "speedCmS": 47.8,
+          "speedKn": 0.93
+        },
+        {
+          "date": "2026-11-06",
+          "time": "01:00",
+          "dir": "남남동",
+          "speedCmS": 29.2,
+          "speedKn": 0.57
+        },
+        {
+          "date": "2026-11-06",
+          "time": "02:00",
+          "dir": "남",
+          "speedCmS": 11.8,
+          "speedKn": 0.23
+        },
+        {
+          "date": "2026-11-06",
+          "time": "03:00",
+          "dir": "남동",
+          "speedCmS": 6.8,
+          "speedKn": 0.13
+        },
+        {
+          "date": "2026-11-06",
+          "time": "04:00",
+          "dir": "동북동",
+          "speedCmS": 6.2,
+          "speedKn": 0.12
+        },
+        {
+          "date": "2026-11-06",
+          "time": "05:00",
+          "dir": "북북서",
+          "speedCmS": 23.1,
+          "speedKn": 0.45
+        },
+        {
+          "date": "2026-11-06",
+          "time": "06:00",
+          "dir": "북북서",
+          "speedCmS": 40.8,
+          "speedKn": 0.79
+        },
+        {
+          "date": "2026-11-06",
+          "time": "07:00",
+          "dir": "북북서",
+          "speedCmS": 36.8,
+          "speedKn": 0.71
+        },
+        {
+          "date": "2026-11-06",
+          "time": "08:00",
+          "dir": "북북서",
+          "speedCmS": 28.4,
+          "speedKn": 0.55
+        },
+        {
+          "date": "2026-11-06",
+          "time": "09:00",
+          "dir": "북북서",
+          "speedCmS": 25.5,
+          "speedKn": 0.5
+        },
+        {
+          "date": "2026-11-06",
+          "time": "10:00",
+          "dir": "북북동",
+          "speedCmS": 9.4,
+          "speedKn": 0.18
+        },
+        {
+          "date": "2026-11-06",
+          "time": "11:00",
+          "dir": "남동",
+          "speedCmS": 36.4,
+          "speedKn": 0.71
+        },
+        {
+          "date": "2026-11-06",
+          "time": "12:00",
+          "dir": "남동",
+          "speedCmS": 61.3,
+          "speedKn": 1.19
+        },
+        {
+          "date": "2026-11-06",
+          "time": "13:00",
+          "dir": "남동",
+          "speedCmS": 46.4,
+          "speedKn": 0.9
+        },
+        {
+          "date": "2026-11-06",
+          "time": "14:00",
+          "dir": "남남동",
+          "speedCmS": 21.8,
+          "speedKn": 0.42
+        },
+        {
+          "date": "2026-11-06",
+          "time": "15:00",
+          "dir": "남남동",
+          "speedCmS": 16.6,
+          "speedKn": 0.32
+        },
+        {
+          "date": "2026-11-06",
+          "time": "16:00",
+          "dir": "남동",
+          "speedCmS": 18.6,
+          "speedKn": 0.36
+        },
+        {
+          "date": "2026-11-06",
+          "time": "17:00",
+          "dir": "북북동",
+          "speedCmS": 7.0,
+          "speedKn": 0.14
+        },
+        {
+          "date": "2026-11-06",
+          "time": "18:00",
+          "dir": "북북서",
+          "speedCmS": 28.5,
+          "speedKn": 0.55
+        },
+        {
+          "date": "2026-11-06",
+          "time": "19:00",
+          "dir": "북북서",
+          "speedCmS": 33.4,
+          "speedKn": 0.65
+        },
+        {
+          "date": "2026-11-06",
+          "time": "20:00",
+          "dir": "북북서",
+          "speedCmS": 29.0,
+          "speedKn": 0.56
+        },
+        {
+          "date": "2026-11-06",
+          "time": "21:00",
+          "dir": "북북서",
+          "speedCmS": 33.0,
+          "speedKn": 0.64
+        },
+        {
+          "date": "2026-11-06",
+          "time": "22:00",
+          "dir": "북북서",
+          "speedCmS": 27.1,
+          "speedKn": 0.53
+        },
+        {
+          "date": "2026-11-06",
+          "time": "23:00",
+          "dir": "동남동",
+          "speedCmS": 11.4,
+          "speedKn": 0.22
         }
       ]
     },
     "23LTC02": {
       "name": "제주도 서측",
-      "reqDate": "20261030",
+      "reqDate": "20261031",
       "items": [
-        {
-          "date": "2026-10-30",
-          "time": "00:00",
-          "dir": "남동",
-          "speedCmS": 13.4,
-          "speedKn": 0.26
-        },
-        {
-          "date": "2026-10-30",
-          "time": "01:00",
-          "dir": "남동",
-          "speedCmS": 16.7,
-          "speedKn": 0.32
-        },
-        {
-          "date": "2026-10-30",
-          "time": "02:00",
-          "dir": "남남동",
-          "speedCmS": 20.0,
-          "speedKn": 0.39
-        },
-        {
-          "date": "2026-10-30",
-          "time": "03:00",
-          "dir": "남",
-          "speedCmS": 22.5,
-          "speedKn": 0.44
-        },
-        {
-          "date": "2026-10-30",
-          "time": "04:00",
-          "dir": "남",
-          "speedCmS": 22.9,
-          "speedKn": 0.45
-        },
-        {
-          "date": "2026-10-30",
-          "time": "05:00",
-          "dir": "남남서",
-          "speedCmS": 22.6,
-          "speedKn": 0.44
-        },
-        {
-          "date": "2026-10-30",
-          "time": "06:00",
-          "dir": "남남서",
-          "speedCmS": 23.2,
-          "speedKn": 0.45
-        },
-        {
-          "date": "2026-10-30",
-          "time": "07:00",
-          "dir": "남서",
-          "speedCmS": 23.4,
-          "speedKn": 0.45
-        },
-        {
-          "date": "2026-10-30",
-          "time": "08:00",
-          "dir": "남남서",
-          "speedCmS": 22.3,
-          "speedKn": 0.43
-        },
-        {
-          "date": "2026-10-30",
-          "time": "09:00",
-          "dir": "남남서",
-          "speedCmS": 20.8,
-          "speedKn": 0.41
-        },
-        {
-          "date": "2026-10-30",
-          "time": "10:00",
-          "dir": "남남서",
-          "speedCmS": 16.8,
-          "speedKn": 0.33
-        },
-        {
-          "date": "2026-10-30",
-          "time": "11:00",
-          "dir": "남남서",
-          "speedCmS": 10.6,
-          "speedKn": 0.21
-        },
-        {
-          "date": "2026-10-30",
-          "time": "12:00",
-          "dir": "남",
-          "speedCmS": 6.8,
-          "speedKn": 0.13
-        },
-        {
-          "date": "2026-10-30",
-          "time": "13:00",
-          "dir": "남",
-          "speedCmS": 8.7,
-          "speedKn": 0.17
-        },
-        {
-          "date": "2026-10-30",
-          "time": "14:00",
-          "dir": "남남서",
-          "speedCmS": 14.8,
-          "speedKn": 0.29
-        },
-        {
-          "date": "2026-10-30",
-          "time": "15:00",
-          "dir": "남남서",
-          "speedCmS": 22.6,
-          "speedKn": 0.44
-        },
-        {
-          "date": "2026-10-30",
-          "time": "16:00",
-          "dir": "남서",
-          "speedCmS": 28.6,
-          "speedKn": 0.56
-        },
-        {
-          "date": "2026-10-30",
-          "time": "17:00",
-          "dir": "남서",
-          "speedCmS": 32.4,
-          "speedKn": 0.63
-        },
-        {
-          "date": "2026-10-30",
-          "time": "18:00",
-          "dir": "남서",
-          "speedCmS": 33.9,
-          "speedKn": 0.66
-        },
-        {
-          "date": "2026-10-30",
-          "time": "19:00",
-          "dir": "남서",
-          "speedCmS": 31.4,
-          "speedKn": 0.61
-        },
-        {
-          "date": "2026-10-30",
-          "time": "20:00",
-          "dir": "남남서",
-          "speedCmS": 26.0,
-          "speedKn": 0.5
-        },
-        {
-          "date": "2026-10-30",
-          "time": "21:00",
-          "dir": "남",
-          "speedCmS": 21.7,
-          "speedKn": 0.42
-        },
-        {
-          "date": "2026-10-30",
-          "time": "22:00",
-          "dir": "남",
-          "speedCmS": 17.9,
-          "speedKn": 0.35
-        },
-        {
-          "date": "2026-10-30",
-          "time": "23:00",
-          "dir": "남남동",
-          "speedCmS": 13.6,
-          "speedKn": 0.26
-        },
         {
           "date": "2026-10-31",
           "time": "00:00",
@@ -4726,6 +4558,174 @@
           "dir": "남",
           "speedCmS": 10.1,
           "speedKn": 0.2
+        },
+        {
+          "date": "2026-11-06",
+          "time": "00:00",
+          "dir": "남남서",
+          "speedCmS": 14.7,
+          "speedKn": 0.29
+        },
+        {
+          "date": "2026-11-06",
+          "time": "01:00",
+          "dir": "남남서",
+          "speedCmS": 17.1,
+          "speedKn": 0.33
+        },
+        {
+          "date": "2026-11-06",
+          "time": "02:00",
+          "dir": "남남서",
+          "speedCmS": 18.5,
+          "speedKn": 0.36
+        },
+        {
+          "date": "2026-11-06",
+          "time": "03:00",
+          "dir": "남남서",
+          "speedCmS": 19.2,
+          "speedKn": 0.37
+        },
+        {
+          "date": "2026-11-06",
+          "time": "04:00",
+          "dir": "남남서",
+          "speedCmS": 16.5,
+          "speedKn": 0.32
+        },
+        {
+          "date": "2026-11-06",
+          "time": "05:00",
+          "dir": "남서",
+          "speedCmS": 9.1,
+          "speedKn": 0.18
+        },
+        {
+          "date": "2026-11-06",
+          "time": "06:00",
+          "dir": "서",
+          "speedCmS": 0.8,
+          "speedKn": 0.02
+        },
+        {
+          "date": "2026-11-06",
+          "time": "07:00",
+          "dir": "북동",
+          "speedCmS": 5.5,
+          "speedKn": 0.11
+        },
+        {
+          "date": "2026-11-06",
+          "time": "08:00",
+          "dir": "동북동",
+          "speedCmS": 7.7,
+          "speedKn": 0.15
+        },
+        {
+          "date": "2026-11-06",
+          "time": "09:00",
+          "dir": "동북동",
+          "speedCmS": 7.1,
+          "speedKn": 0.14
+        },
+        {
+          "date": "2026-11-06",
+          "time": "10:00",
+          "dir": "동남동",
+          "speedCmS": 4.7,
+          "speedKn": 0.09
+        },
+        {
+          "date": "2026-11-06",
+          "time": "11:00",
+          "dir": "남",
+          "speedCmS": 6.1,
+          "speedKn": 0.12
+        },
+        {
+          "date": "2026-11-06",
+          "time": "12:00",
+          "dir": "남남서",
+          "speedCmS": 11.2,
+          "speedKn": 0.22
+        },
+        {
+          "date": "2026-11-06",
+          "time": "13:00",
+          "dir": "남서",
+          "speedCmS": 15.6,
+          "speedKn": 0.3
+        },
+        {
+          "date": "2026-11-06",
+          "time": "14:00",
+          "dir": "남서",
+          "speedCmS": 19.6,
+          "speedKn": 0.38
+        },
+        {
+          "date": "2026-11-06",
+          "time": "15:00",
+          "dir": "남서",
+          "speedCmS": 23.9,
+          "speedKn": 0.46
+        },
+        {
+          "date": "2026-11-06",
+          "time": "16:00",
+          "dir": "남서",
+          "speedCmS": 25.3,
+          "speedKn": 0.49
+        },
+        {
+          "date": "2026-11-06",
+          "time": "17:00",
+          "dir": "남서",
+          "speedCmS": 20.6,
+          "speedKn": 0.4
+        },
+        {
+          "date": "2026-11-06",
+          "time": "18:00",
+          "dir": "남서",
+          "speedCmS": 10.9,
+          "speedKn": 0.21
+        },
+        {
+          "date": "2026-11-06",
+          "time": "19:00",
+          "dir": "남",
+          "speedCmS": 1.1,
+          "speedKn": 0.02
+        },
+        {
+          "date": "2026-11-06",
+          "time": "20:00",
+          "dir": "동북동",
+          "speedCmS": 6.9,
+          "speedKn": 0.13
+        },
+        {
+          "date": "2026-11-06",
+          "time": "21:00",
+          "dir": "동",
+          "speedCmS": 9.8,
+          "speedKn": 0.19
+        },
+        {
+          "date": "2026-11-06",
+          "time": "22:00",
+          "dir": "동남동",
+          "speedCmS": 8.9,
+          "speedKn": 0.17
+        },
+        {
+          "date": "2026-11-06",
+          "time": "23:00",
+          "dir": "남남동",
+          "speedCmS": 9.1,
+          "speedKn": 0.18
         }
       ]
     }
