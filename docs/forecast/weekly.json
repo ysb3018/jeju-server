@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T17:43:30+09:00",
+  "updatedAt": "2026-10-30T18:41:20+09:00",
   "shortTerm": {
     "baseTime": "202610301700",
     "days": [
@@ -361,7 +361,7 @@
     ]
   },
   "midTerm": {
-    "issuedAt": "202610300600",
+    "issuedAt": "202610301800",
     "region": "제주도",
     "days": [
       {
@@ -371,13 +371,13 @@
         "maxTemp": 19,
         "am": {
           "weather": "맑음",
-          "rainProbability": 10,
+          "rainProbability": 20,
           "waveMin": 1.0,
           "waveMax": 2.0
         },
         "pm": {
-          "weather": "구름많음",
-          "rainProbability": 20,
+          "weather": "흐림",
+          "rainProbability": 40,
           "waveMin": 1.0,
           "waveMax": 2.0
         }
@@ -388,41 +388,41 @@
         "minTemp": 15,
         "maxTemp": 20,
         "am": {
-          "weather": "구름많음",
-          "rainProbability": 20,
+          "weather": "흐리고 비",
+          "rainProbability": 60,
           "waveMin": 1.0,
           "waveMax": 2.0
         },
         "pm": {
-          "weather": "구름많음",
-          "rainProbability": 20,
+          "weather": "흐리고 비",
+          "rainProbability": 60,
           "waveMin": 1.0,
-          "waveMax": 2.0
+          "waveMax": 2.5
         }
       },
       {
         "date": "2026-11-06",
         "offset": 7,
-        "minTemp": 14,
-        "maxTemp": 19,
+        "minTemp": 13,
+        "maxTemp": 18,
         "am": {
-          "weather": "맑음",
-          "rainProbability": 10,
+          "weather": "구름많음",
+          "rainProbability": 30,
           "waveMin": 1.0,
-          "waveMax": 2.0
+          "waveMax": 2.5
         },
         "pm": {
           "weather": "맑음",
-          "rainProbability": 10,
+          "rainProbability": 20,
           "waveMin": 1.0,
-          "waveMax": 2.0
+          "waveMax": 2.5
         }
       },
       {
         "date": "2026-11-07",
         "offset": 8,
-        "minTemp": 13,
-        "maxTemp": 18,
+        "minTemp": 12,
+        "maxTemp": 16,
         "am": {
           "weather": "맑음",
           "rainProbability": 10,
@@ -434,8 +434,8 @@
       {
         "date": "2026-11-08",
         "offset": 9,
-        "minTemp": 12,
-        "maxTemp": 17,
+        "minTemp": 11,
+        "maxTemp": 15,
         "am": {
           "weather": "맑음",
           "rainProbability": 10,
@@ -447,8 +447,8 @@
       {
         "date": "2026-11-09",
         "offset": 10,
-        "minTemp": 12,
-        "maxTemp": 17,
+        "minTemp": 11,
+        "maxTemp": 15,
         "am": {
           "weather": "맑음",
           "rainProbability": 10,
