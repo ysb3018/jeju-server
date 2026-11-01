@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-02T05:24:12+09:00",
+  "updatedAt": "2026-11-02T06:26:43+09:00",
   "shortTerm": {
-    "baseTime": "202611020200",
+    "baseTime": "202611020500",
     "days": [
       {
         "date": "2026-11-02",
@@ -10,20 +10,10 @@
         "rainProbability": 30,
         "hours": [
           {
-            "time": "0300",
-            "temp": "18",
-            "windSpeed": "5.5",
-            "windDirection": "314",
-            "rainProbability": "30",
-            "sky": "4",
-            "precipitationType": "0",
-            "rainAmount": "강수없음"
-          },
-          {
             "time": "0600",
             "temp": "17",
             "windSpeed": "6.2",
-            "windDirection": "345",
+            "windDirection": "352",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -32,8 +22,8 @@
           {
             "time": "0900",
             "temp": "18",
-            "windSpeed": "6.4",
-            "windDirection": "348",
+            "windSpeed": "5.4",
+            "windDirection": "356",
             "rainProbability": "30",
             "sky": "4",
             "precipitationType": "0",
@@ -42,8 +32,8 @@
           {
             "time": "1200",
             "temp": "19",
-            "windSpeed": "7.1",
-            "windDirection": "349",
+            "windSpeed": "6.2",
+            "windDirection": "342",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -51,9 +41,9 @@
           },
           {
             "time": "1500",
-            "temp": "19",
-            "windSpeed": "7.6",
-            "windDirection": "351",
+            "temp": "18",
+            "windSpeed": "7.1",
+            "windDirection": "354",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -62,8 +52,8 @@
           {
             "time": "1800",
             "temp": "16",
-            "windSpeed": "7",
-            "windDirection": "359",
+            "windSpeed": "6.7",
+            "windDirection": "7",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -72,8 +62,8 @@
           {
             "time": "2100",
             "temp": "15",
-            "windSpeed": "5.9",
-            "windDirection": "6",
+            "windSpeed": "6.1",
+            "windDirection": "18",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -85,14 +75,14 @@
       {
         "date": "2026-11-03",
         "minTemp": 13.0,
-        "maxTemp": 18.0,
+        "maxTemp": 19.0,
         "rainProbability": 20,
         "hours": [
           {
             "time": "0000",
             "temp": "14",
-            "windSpeed": "5.1",
-            "windDirection": "17",
+            "windSpeed": "6.1",
+            "windDirection": "29",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -101,8 +91,8 @@
           {
             "time": "0300",
             "temp": "14",
-            "windSpeed": "5",
-            "windDirection": "26",
+            "windSpeed": "5.5",
+            "windDirection": "35",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -111,8 +101,8 @@
           {
             "time": "0600",
             "temp": "13",
-            "windSpeed": "4.6",
-            "windDirection": "34",
+            "windSpeed": "5",
+            "windDirection": "43",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -121,8 +111,8 @@
           {
             "time": "0900",
             "temp": "16",
-            "windSpeed": "4.6",
-            "windDirection": "34",
+            "windSpeed": "5",
+            "windDirection": "51",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -131,8 +121,8 @@
           {
             "time": "1200",
             "temp": "18",
-            "windSpeed": "4.8",
-            "windDirection": "32",
+            "windSpeed": "4.6",
+            "windDirection": "50",
             "rainProbability": "0",
             "sky": "1",
             "precipitationType": "0",
@@ -141,8 +131,8 @@
           {
             "time": "1500",
             "temp": "18",
-            "windSpeed": "4.4",
-            "windDirection": "33",
+            "windSpeed": "4.3",
+            "windDirection": "48",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -151,8 +141,8 @@
           {
             "time": "1800",
             "temp": "16",
-            "windSpeed": "3.2",
-            "windDirection": "47",
+            "windSpeed": "3.7",
+            "windDirection": "63",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -161,8 +151,8 @@
           {
             "time": "2100",
             "temp": "15",
-            "windSpeed": "2.9",
-            "windDirection": "57",
+            "windSpeed": "3.1",
+            "windDirection": "70",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -175,13 +165,13 @@
         "date": "2026-11-04",
         "minTemp": 14.0,
         "maxTemp": 20.0,
-        "rainProbability": 30,
+        "rainProbability": 60,
         "hours": [
           {
             "time": "0000",
             "temp": "15",
-            "windSpeed": "2.9",
-            "windDirection": "68",
+            "windSpeed": "3",
+            "windDirection": "77",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -190,8 +180,8 @@
           {
             "time": "0300",
             "temp": "15",
-            "windSpeed": "2.7",
-            "windDirection": "73",
+            "windSpeed": "3.3",
+            "windDirection": "78",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -200,8 +190,8 @@
           {
             "time": "0600",
             "temp": "14",
-            "windSpeed": "3.2",
-            "windDirection": "74",
+            "windSpeed": "3.4",
+            "windDirection": "83",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -210,8 +200,8 @@
           {
             "time": "0900",
             "temp": "17",
-            "windSpeed": "3.2",
-            "windDirection": "79",
+            "windSpeed": "3.7",
+            "windDirection": "82",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -219,9 +209,9 @@
           },
           {
             "time": "1200",
-            "temp": "19",
-            "windSpeed": "1.8",
-            "windDirection": "77",
+            "temp": "20",
+            "windSpeed": "2.3",
+            "windDirection": "90",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -230,8 +220,8 @@
           {
             "time": "1500",
             "temp": "20",
-            "windSpeed": "1.9",
-            "windDirection": "87",
+            "windSpeed": "2.3",
+            "windDirection": "90",
             "rainProbability": "20",
             "sky": "3",
             "precipitationType": "0",
@@ -240,7 +230,7 @@
           {
             "time": "1800",
             "temp": "18",
-            "windSpeed": "1.7",
+            "windSpeed": "2.3",
             "windDirection": "90",
             "rainProbability": "20",
             "sky": "3",
@@ -250,12 +240,12 @@
           {
             "time": "2100",
             "temp": "18",
-            "windSpeed": "1.8",
-            "windDirection": "90",
-            "rainProbability": "20",
-            "sky": "3",
-            "precipitationType": "0",
-            "rainAmount": "강수없음"
+            "windSpeed": "2.7",
+            "windDirection": "98",
+            "rainProbability": "60",
+            "sky": "4",
+            "precipitationType": "1",
+            "rainAmount": "1mm 미만"
           }
         ],
         "source": "KMA 단기예보 · 한림읍 nx=48 ny=36"
@@ -263,24 +253,24 @@
       {
         "date": "2026-11-05",
         "minTemp": 17.0,
-        "maxTemp": 22.0,
+        "maxTemp": 21.0,
         "rainProbability": 60,
         "hours": [
           {
             "time": "0000",
-            "temp": "17",
-            "windSpeed": "1.8",
-            "windDirection": "90",
-            "rainProbability": "30",
+            "temp": "18",
+            "windSpeed": "2.9",
+            "windDirection": "108",
+            "rainProbability": "60",
             "sky": "4",
-            "precipitationType": "0",
-            "rainAmount": "강수없음"
+            "precipitationType": "1",
+            "rainAmount": "1mm 미만"
           },
           {
             "time": "0300",
             "temp": "18",
             "windSpeed": "1",
-            "windDirection": "96",
+            "windDirection": "110",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -289,8 +279,8 @@
           {
             "time": "0600",
             "temp": "18",
-            "windSpeed": "1",
-            "windDirection": "138",
+            "windSpeed": "2",
+            "windDirection": "145",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -299,8 +289,8 @@
           {
             "time": "0900",
             "temp": "20",
-            "windSpeed": "1",
-            "windDirection": "167",
+            "windSpeed": "2",
+            "windDirection": "174",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -309,8 +299,8 @@
           {
             "time": "1200",
             "temp": "21",
-            "windSpeed": "1",
-            "windDirection": "211",
+            "windSpeed": "2",
+            "windDirection": "242",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -318,9 +308,9 @@
           },
           {
             "time": "1500",
-            "temp": "22",
+            "temp": "21",
             "windSpeed": "2",
-            "windDirection": "250",
+            "windDirection": "269",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -328,9 +318,9 @@
           },
           {
             "time": "1800",
-            "temp": "19",
+            "temp": "18",
             "windSpeed": "2",
-            "windDirection": "283",
+            "windDirection": "323",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -338,9 +328,9 @@
           },
           {
             "time": "2100",
-            "temp": "18",
+            "temp": "17",
             "windSpeed": "2",
-            "windDirection": "317",
+            "windDirection": "0",
             "rainProbability": "60",
             "sky": "4",
             "precipitationType": "1",
@@ -351,15 +341,15 @@
       },
       {
         "date": "2026-11-06",
-        "minTemp": 18.0,
-        "maxTemp": 18.0,
+        "minTemp": 17.0,
+        "maxTemp": 17.0,
         "rainProbability": 60,
         "hours": [
           {
             "time": "0000",
-            "temp": "18",
+            "temp": "17",
             "windSpeed": "2",
-            "windDirection": "337",
+            "windDirection": "348",
             "rainProbability": "60",
             "sky": "3",
             "precipitationType": "1",
@@ -371,49 +361,31 @@
     ]
   },
   "midTerm": {
-    "issuedAt": "202611010600",
+    "issuedAt": "202611020600",
     "region": "제주도",
     "days": [
       {
-        "date": "2026-11-06",
-        "offset": 5,
-        "minTemp": 15,
-        "maxTemp": 17,
-        "am": {
-          "weather": "구름많음",
-          "rainProbability": 30,
-          "waveMin": 1.0,
-          "waveMax": 2.5
-        },
-        "pm": {
-          "weather": "맑음",
-          "rainProbability": 20,
-          "waveMin": 1.0,
-          "waveMax": 2.5
-        }
-      },
-      {
         "date": "2026-11-07",
-        "offset": 6,
-        "minTemp": 10,
-        "maxTemp": 14,
+        "offset": 5,
+        "minTemp": 9,
+        "maxTemp": 12,
         "am": {
           "weather": "맑음",
           "rainProbability": 10,
           "waveMin": 1.0,
-          "waveMax": 2.5
+          "waveMax": 3.0
         },
         "pm": {
           "weather": "맑음",
           "rainProbability": 10,
           "waveMin": 1.0,
-          "waveMax": 2.5
+          "waveMax": 3.0
         }
       },
       {
         "date": "2026-11-08",
-        "offset": 7,
-        "minTemp": 10,
+        "offset": 6,
+        "minTemp": 9,
         "maxTemp": 14,
         "am": {
           "weather": "맑음",
@@ -430,8 +402,8 @@
       },
       {
         "date": "2026-11-09",
-        "offset": 8,
-        "minTemp": 12,
+        "offset": 7,
+        "minTemp": 11,
         "maxTemp": 15,
         "am": {
           "weather": "맑음",
@@ -439,13 +411,18 @@
           "waveMin": 1.0,
           "waveMax": 2.0
         },
-        "pm": null
+        "pm": {
+          "weather": "맑음",
+          "rainProbability": 10,
+          "waveMin": 1.0,
+          "waveMax": 2.0
+        }
       },
       {
         "date": "2026-11-10",
-        "offset": 9,
-        "minTemp": 11,
-        "maxTemp": 15,
+        "offset": 8,
+        "minTemp": 12,
+        "maxTemp": 16,
         "am": {
           "weather": "맑음",
           "rainProbability": 10,
@@ -456,9 +433,22 @@
       },
       {
         "date": "2026-11-11",
-        "offset": 10,
+        "offset": 9,
         "minTemp": 11,
         "maxTemp": 16,
+        "am": {
+          "weather": "맑음",
+          "rainProbability": 10,
+          "waveMin": 1.0,
+          "waveMax": 2.0
+        },
+        "pm": null
+      },
+      {
+        "date": "2026-11-12",
+        "offset": 10,
+        "minTemp": 12,
+        "maxTemp": 17,
         "am": {
           "weather": "맑음",
           "rainProbability": 10,
