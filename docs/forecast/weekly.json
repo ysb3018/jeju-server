@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T17:52:57+09:00",
+  "updatedAt": "2026-11-02T18:51:35+09:00",
   "shortTerm": {
     "baseTime": "202611021700",
     "days": [
@@ -361,7 +361,7 @@
     ]
   },
   "midTerm": {
-    "issuedAt": "202611020600",
+    "issuedAt": "202611021800",
     "region": "제주도",
     "days": [
       {
@@ -388,8 +388,8 @@
         "minTemp": 9,
         "maxTemp": 14,
         "am": {
-          "weather": "맑음",
-          "rainProbability": 10,
+          "weather": "구름많음",
+          "rainProbability": 20,
           "waveMin": 1.0,
           "waveMax": 2.0
         },
@@ -424,8 +424,8 @@
         "minTemp": 12,
         "maxTemp": 16,
         "am": {
-          "weather": "맑음",
-          "rainProbability": 10,
+          "weather": "구름많음",
+          "rainProbability": 20,
           "waveMin": 1.0,
           "waveMax": 2.0
         },
