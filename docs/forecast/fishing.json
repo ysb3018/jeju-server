@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T10:24:45+09:00",
+  "updatedAt": "2026-11-09T18:04:49+09:00",
   "places": {
     "서귀포": {
       "gubun": "갯바위",
@@ -175,7 +175,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "좋음",
+          "index": "매우나쁨",
           "species": "기타어종",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -189,7 +189,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "좋음",
+          "index": "매우나쁨",
           "species": "돌돔",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -203,7 +203,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "매우좋음",
+          "index": "매우나쁨",
           "species": "벵에돔",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -217,7 +217,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "매우좋음",
+          "index": "매우나쁨",
           "species": "참돔",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -740,7 +740,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "기타어종",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -754,7 +754,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "돌돔",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -768,7 +768,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "벵에돔",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -782,7 +782,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "참돔",
           "tide": "대조기",
           "waveMin": 0.7,
@@ -1389,7 +1389,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "기타어종",
           "tide": "대조기",
           "waveMin": 1.0,
@@ -1403,7 +1403,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "농어",
           "tide": "대조기",
           "waveMin": 1.0,
@@ -1417,7 +1417,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "나쁨",
+          "index": "매우나쁨",
           "species": "돌돔",
           "tide": "대조기",
           "waveMin": 1.0,
@@ -1431,7 +1431,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "벵에돔",
           "tide": "대조기",
           "waveMin": 1.0,
@@ -1445,7 +1445,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "나쁨",
+          "index": "매우나쁨",
           "species": "우럭",
           "tide": "대조기",
           "waveMin": 1.0,
@@ -1459,7 +1459,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "참돔",
           "tide": "대조기",
           "waveMin": 1.0,
@@ -2150,7 +2150,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "좋음",
+          "index": "매우나쁨",
           "species": "감성돔",
           "tide": "대조기",
           "waveMin": 0.4,
@@ -2164,7 +2164,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "기타어종",
           "tide": "대조기",
           "waveMin": 0.4,
@@ -2178,7 +2178,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "보통",
+          "index": "매우나쁨",
           "species": "돌돔",
           "tide": "대조기",
           "waveMin": 0.4,
@@ -2192,7 +2192,7 @@
         {
           "date": "2026-11-10",
           "noon": "오후",
-          "index": "좋음",
+          "index": "매우나쁨",
           "species": "벵에돔",
           "tide": "대조기",
           "waveMin": 0.4,
@@ -2648,10 +2648,10 @@
           "index": "매우나쁨",
           "species": "감성돔",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
@@ -2662,10 +2662,10 @@
           "index": "매우나쁨",
           "species": "기타어종",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
@@ -2676,10 +2676,10 @@
           "index": "매우나쁨",
           "species": "농어",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
@@ -2690,10 +2690,10 @@
           "index": "매우나쁨",
           "species": "돌돔",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
@@ -2704,10 +2704,10 @@
           "index": "매우나쁨",
           "species": "벵에돔",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
@@ -2718,10 +2718,10 @@
           "index": "매우나쁨",
           "species": "볼락",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
@@ -2732,10 +2732,10 @@
           "index": "매우나쁨",
           "species": "참돔",
           "tide": "대조기",
-          "waveMin": 0.5,
-          "waveMax": 0.5,
-          "waterMin": 16.5,
-          "waterMax": 16.5,
+          "waveMin": 0.9,
+          "waveMax": 0.9,
+          "waterMin": 16.2,
+          "waterMax": 16.2,
           "windMin": 13.0,
           "windMax": 16.2,
           "currentMax": 0.6
