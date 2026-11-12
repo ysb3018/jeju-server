@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T12:35:49+09:00",
+  "updatedAt": "2026-11-12T21:10:20+09:00",
   "places": {
     "서귀포": {
       "gubun": "갯바위",
@@ -2650,8 +2650,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
@@ -2664,8 +2664,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
@@ -2678,8 +2678,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
@@ -2692,8 +2692,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
@@ -2706,8 +2706,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
@@ -2720,8 +2720,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
@@ -2734,8 +2734,8 @@
           "tide": "대조기",
           "waveMin": 0.2,
           "waveMax": 0.2,
-          "waterMin": 15.7,
-          "waterMax": 15.7,
+          "waterMin": 15.3,
+          "waterMax": 15.3,
           "windMin": 1.7,
           "windMax": 2.6,
           "currentMax": 0.6
